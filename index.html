@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sibyl（王语彤）— AI Product Manager 个人简历" />
+  <title>Sibyl — AI Product Manager</title>
+
+  <!-- 样式 -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- GSAP CDN（塔罗牌动画） -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== 导航栏 ========== -->
+  <nav class="navbar" id="navbar">
+    <span class="brand" onclick="window.scrollTo({top:0,behavior:'smooth'})">Sibyl's 个人简历</span>
+    <button class="hamburger" id="hamburger" aria-label="菜单">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#experiences" data-section="experiences">Experiences</a>
+      <a href="#projects" data-section="projects">Vibe Coding</a>
+      <a href="#capability" data-section="capability">Capability</a>
+    </div>
+  </nav>
+
+  <!-- ========== Hero 首页 ========== -->
+  <section class="hero section" id="hero">
+    <div class="hero-deco hero-deco-left">✦</div>
+    <div class="hero-deco hero-deco-right">❋</div>
+    <div class="hero-avatar">
+      <img src="https://zhiyan-ai-agent-with-1258344702.cos.ap-guangzhou.tencentcos.cn/with/d1263122-6aaf-4a63-a83b-aabd70d6b263/bcd11a34ad51f9d85011fbaeee12d0e3.jpg" alt="Sibyl" />
+    </div>
+    <h1 class="hero-title" id="heroTitle"></h1>
+    <p class="hero-subtitle" id="heroSubtitle">
+      <span class="hero-name">王语彤</span>
+      <span class="hero-separator"> | </span>
+      <span class="hero-role-wrapper">
+        <span class="hero-role" id="heroRole"></span>
+        <span class="hero-cursor">|</span>
+      </span>
+    </p>
+    <!-- 联系方式图标 -->
+    <div class="hero-contacts" id="heroContacts"></div>
+    <div class="hero-scroll-hint">
+      Scroll to explore more <span>↓</span>
+    </div>
+  </section>
+
+  <!-- ========== Experiences 时间轴 ========== -->
+  <section class="section" id="experiences">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-number">Chapter I</span>
+        <h2>The Practitioner</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle"></p>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- ========== Vibe Coding 项目展示 ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-number">Chapter II</span>
+        <h2>The Creator</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Vibe Coding 独立作品</p>
+      </div>
+      <div class="showcase-wrapper" id="showcaseWrapper"></div>
+    </div>
+  </section>
+
+  <!-- ========== Capability 塔罗牌 ========== -->
+  <section class="section tarot-section" id="capability">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-number">Chapter III</span>
+        <h2>The Explorer</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">兴趣爱好与个人特质</p>
+      </div>
+      <div class="tarot-hint">✦ Click cards to explore my DNA ✦</div>
+      <div class="tarot-table" id="tarotTable">
+        <div class="tarot-table-hint">— choose a card to reveal —</div>
+        <div class="tarot-fan" id="tarotFan"></div>
+        <div class="tarot-counter" id="tarotCounter">
+          已翻开 <span class="count-current" id="countCurrent">0</span> / <span id="countTotal">6</span>
+        </div>
+        <div class="tarot-complete-msg" id="tarotCompleteMsg">✨ 你已解锁 Sibyl 的全部秘密 ✨</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 塔罗牌弹窗 ========== -->
+  <div class="tarot-overlay" id="tarotOverlay">
+    <div class="tarot-modal" id="tarotModal">
+      <div class="modal-emoji" id="modalEmoji"></div>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-subtitle" id="modalSubtitle"></p>
+      <div class="modal-map-container" id="modalMapContainer"></div>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-fun-fact" id="modalFunFact"></div>
+      <br /><br />
+      <button class="modal-close" id="modalClose">✦ 收起卡牌 ✦</button>
+    </div>
+  </div>
+
+  <!-- ========== 彩蛋 ========== -->
+  <div class="easter-egg-toast" id="easterEgg">🎉 你已解锁 Sibyl 的全部秘密！</div>
+
+  <!-- ========== 页脚 ========== -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="footer-links" id="footerLinks"></div>
+    <p class="footer-text" id="footerText"></p>
+  </footer>
+
+  <!-- 脚本 -->
+  <script src="data.js"></script>
+  <script src="china-map.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

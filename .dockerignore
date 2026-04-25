@@ -1,0 +1,7 @@
+.git
+.gitignore
+.agent
+.with
+.DS_Store
+*.md
+node_modules
