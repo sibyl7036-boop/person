@@ -2,7 +2,7 @@
 
 > 一份用 Vibe Coding 独立完成的动态网页简历，纯原生 HTML / CSS / JavaScript，零框架依赖。
 
-**在线访问：** [https://person-xxx.vercel.app](https://github.com/sibyl7036-boop/person)
+**在线访问：** https://person-delta.vercel.app/
 
 ---
 
