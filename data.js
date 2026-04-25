@@ -157,7 +157,7 @@ const SITE_DATA = {
     subtitle: 'Know your Offer Journey',
     description: '一款面向求职季大学生的一站式求职流程管理看板。系统以看板 + 日历 + 公司流程图三视图打通投递全链路，覆盖面试、笔试、测评、HR 面到 Offer 全节点，配套多版本简历管理与 PDF 预览。',
     aiHighlight: '核心亮点是深度融合的 AI 求职小助手：基于豆包大模型，一个聊天框自然语言对话，并一键触发四大能力——面试邮件解析自动建日程、JD 解析抽取能力画像、面试题生成定制高频考点、面试复盘归纳回答与建议。AI 结果先出草稿可改可存，让求职全流程清晰、高效、可追踪。🌸',
-    screenshot: 'https://zhiyan-ai-agent-with-1258344702.cos.ap-guangzhou.tencentcos.cn/with/a3bdb3a1-eec7-4d60-b421-76020cbd7829/image.png',
+    screenshot: './showcase-screenshot.png',
     features: [
       { icon: '📋', label: '看板视图', desc: '心愿单 → 已投递 → 面试中 → Offer → 已结束' },
       { icon: '📅', label: '日历视图', desc: '面试/笔试日程一目了然' },
